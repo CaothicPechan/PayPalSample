@@ -4,16 +4,16 @@
             template(slot='progress')
                 v-progress-linear(color='deep-purple' height='10' indeterminate='')
             v-img(height='250' src='https://cdn.vuetifyjs.com/images/cards/cooking.png')
-            v-card-title Café
-            v-card-text
+            v-card-title Cafetería Wanderstar
                 v-row.mx-0(align='center')
-                    v-rating(:value='4.5' color='amber' dense='' half-increments='' readonly='' size='14')
-                    .grey--text.ml-4
-                        | 4.5 (413)
+                        v-rating(:value='4.5' color='amber' dense='' half-increments='' readonly='' size='14')
+                        .grey--text.ml-4
+                            | 4.5 (413)
+            v-card-text
                     .my-4.subtitle-1
-                        | $ &bull; Paquete de Desayuno y Café
+                        strong Paquete de Desayuno y Café
                     div
-                        | Incluye taza de café, galletas y pay con entrega a domicilio.
+                        | Incluye una taza de café, galletas y un pay con entrega a domicilio.
             v-divider.mx-4
             v-alert(v-if='message.active' dense='' text='' :type='message.type')
                 | {{ message.text }}
